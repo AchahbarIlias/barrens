@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:insert="fragments/head.html :: head"> </head>
+<body>
+<header th:insert="fragments/header.html :: header"> </header>
+<h1>Overview Owners</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Balance</th>
+    </tr>
+    <tr th:each="owner : ${owners}">
+        <td th:text="${owner.ownerId}"></td>
+        <td th:text="${owner.ownerName}"></td>
+        <td th:text="${owner.ownerBalance}"></td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:insert="fragments/head.html :: head"> </head>
+<body>
+<h1>Greetings page</h1>
+<form action="/adduser" method="POST">
+
+    <input type="number" id="id" name="id" value="0"><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br>
+    <input type="number" id="balance" name="balance" value="0"><br>
+
+
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
